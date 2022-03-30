@@ -1,6 +1,9 @@
 *.pptx
 ~*
 .*
+*.zip
+*.csv
+*.db
 Week04/labs/lab04-possible answers.ipynb
 Week05/labs/week5_lab-possible answers.ipynb
 Week06/data-text.csv
@@ -12,3 +15,4 @@ Week06/names.csv
 Week06/PoliceShootingsUS.csv
 Week06/some_file.txt
 Week06/some_other_file.txt
+Week06/labs/volunteers.txt
