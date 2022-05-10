@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+cd /home/ec2-user
+su ec2-user
+
+sudo yum update -y
+
+aws s3 cp s3://com.msarica.ds/server.py ./server.py
+aws s3 cp s3://com.msarica.ds/movie_model.pkl ./movie_model.pkl
+
+sudo pip3 install scikit-learn=='0.24.1'
+sudo pip3 install flask
+sudo pip3 install flask_cors
+sudo pip3 install waitress
+
+sudo python3 server.py
